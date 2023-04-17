@@ -1,0 +1,24 @@
+.storesHeading {
+	color: white;
+	line-height: 3;
+	font-size: (26rem / 16);
+	margin-top: 2em;
+}
+
+.cards {
+	// border: 2px solid green;
+	display: grid;
+	grid-template-columns: repeat(1, minmax(0, 1fr));
+	gap: 1em;
+	// justify-content: center;
+
+	@media (min-width: 600px) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+	@media (min-width: 1200px) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+	// @media (min-width: 1200px) {
+	// 	grid-template-columns: repeat(4, minmax(0, 1fr));
+	// }
+}

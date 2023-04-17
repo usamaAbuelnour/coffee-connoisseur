@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap");
+
+:root {
+	--text-purple-dark: rgba(67, 56, 202, 1);
+	--text-purple: rgba(79, 70, 229, 1);
+	--text-black: rgba(17, 24, 39, 1);
+	--text-white-100: rgba(229, 231, 235, 1);
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	overflow-x: hidden;
+	background-image: url("../public/static/mesh-gradient1.png");
+	background-position: center;
+	background-attachment: fixed;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* glassmorphism styles*/
+
+.glass {
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(2.5px);
+	-webkit-backdrop-filter: blur(2.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	
+	&:hover {
+		background: rgba(255, 255, 255, 0.30);
+		
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	color: white;
+	background-color: var(--text-purple);
+	padding: 1em 2em;
+	font-size: (14rem / 16);
+	font-weight: 600;
+	cursor: pointer;
+	border: none;
+	z-index: 100;
+
+	&:hover {
+		outline: 1px solid;
+	}
+}

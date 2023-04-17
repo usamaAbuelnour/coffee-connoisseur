@@ -1,0 +1,86 @@
+.banner {
+    // border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 1.5em;
+    font-size: 1.4rem;
+    position: relative;
+
+    & > * {
+        // border: 1px solid yellow;
+    }
+
+    .title {
+        line-height: 1.15;
+        z-index: 50;
+    }
+    .title1 {
+        color: white;
+    }
+    .title2 {
+        color: var(--text-purple-dark)
+    }
+
+    .subtitle {
+        color: var(--text-white-100);
+        font-weight: 600;
+        z-index: 50;
+    }
+
+    .avatar {
+        position: absolute;
+        top: 30%;
+        bottom: -15%;
+        right: -8%;
+        left: 0;
+        z-index: 50;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    @media (min-width: 380px) {
+        .avatar {
+            top: -5%;
+            bottom: -35%;
+        }
+    }
+
+    @media (min-width: 380px) and (max-width: 500px) {
+        .subtitle {
+            border: 1px solid;
+            width: 13em;
+        }
+    }
+
+
+
+    @media (min-width: 992px) {
+        .title {
+            font-size: 4rem;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+
+        }
+
+        .avatar {
+            top: -30%;
+            bottom: -45%;
+        }
+       
+    }
+
+    @media (min-width: 1200px) {
+        // font-size: 2rem;
+        
+        .title {
+            font-size: 5rem;
+        }
+    }
+}

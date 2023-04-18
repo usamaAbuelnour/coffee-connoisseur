@@ -65,6 +65,7 @@ const StoreDetails = ({ store }) => {
 		<>
 			<Head>
 				<title>{store.name}</title>
+				<meta name="description" content={`${store.name} coffee store`} />
 			</Head>
 			<div className={styles.store}>
 				<div className={styles.nameImageWrapper}>
@@ -81,7 +82,7 @@ const StoreDetails = ({ store }) => {
 					<h1 className={styles.heading}>{store.name}</h1>
 					<div className={styles.imageDetailsWrapper}>
 						<div className={styles.imageWrapper}>
-							<img src={store.imgUrl} alt="" />
+							<img src={store.imgUrl} alt="store-image" />
 						</div>
 						<div className={[styles.rateVoteWrapper, "glass"].join(" ")}>
 							{store.location.formatted_address && (

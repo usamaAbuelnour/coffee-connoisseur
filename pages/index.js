@@ -38,6 +38,7 @@ export default  function Home({ stores }) {
 		<>
 			<Head>
 				<title>Coffee Conniosseur</title>
+				<meta name="description" content="Allows you to discover coffee stores" />
 			</Head>
 
 			<div className={styles.home}>
